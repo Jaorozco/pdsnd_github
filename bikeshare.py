@@ -2,11 +2,15 @@
 Udacity Bikeshare Python Project
 Author: Juan Orozco
 Date:July 31st 2019
+Update: Project passed
 """
+
+""" importing different libraries """
 import time
 import pandas as pd
 import numpy as np
 
+""" These are the files that contain data for each city, will be used to analyze stattistics for gender, months, and days """
 city_info = { 'new york city': 'new_york_city.csv',
              'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
