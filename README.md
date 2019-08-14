@@ -9,7 +9,10 @@ Sharing the bikesare previous project in udacity
 
 ### Files used
 README.md
+bikeshare.py
+.gitignore
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+##Helped me with a fatal error when pushing to a remote
+https://help.github.com/en/articles/pushing-commits-to-a-remote-repository
 
