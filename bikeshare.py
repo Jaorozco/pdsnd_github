@@ -110,7 +110,7 @@ def time_info(df):
     print('-'*40)
     
 
-def station_info(df):
+def station_stat(df):
     """Displays statistics on the most popular stations and trip."""
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
@@ -193,7 +193,7 @@ def display_rawdata(df):
     start_row = 0
     end_row = 5
     
-    display_active = input("Do you want to see 5 rows of raw data? Enter yes or no:").lower()
+    display_active = input("Do you want to see 5 rows of raw data? Enter yes or no only:").lower()
     
     if display_active == 'yes':
        while end_row <= df.shape[0] - 1:
@@ -202,7 +202,7 @@ def display_rawdata(df):
             start_row += 5
             end_row += 5
             
-            end_display = input("Do you wish to continue seeing data? Enter yes or no: ").lower()
+            end_display = input("Do you wish to continue seeing data? Enter yes or no only: ").lower()
             if end_display == 'no':
                 break
     
@@ -212,12 +212,12 @@ def main():
         df = load_data(city, month, day)
 
         time_info(df)
-        station_info(df)
+        station_stat(df)
         trip_duration_data(df)
         user_info(df, city)
         display_rawdata(df)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
+        restart = input('\nWould you like to restart? Enter yes or no only.\n')
         if restart.lower() != 'yes':
             break
 
